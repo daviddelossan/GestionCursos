@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Practica 2 </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/stylesheets/estilo.css" />
+
+        <script src="/javascripts/jquery-3.1.1.min.js"></script>
+        <script src="/javascripts/funcionalidadCliente.js"></script>
+
+    </head>
+    <body>
+        <span class="cabecera"> 
+            <span class="portalCursos elementoNavegacion" > Portal de cursos</span>
+            <span class="buscarCursos elementoNavegacion" > Buscar cursos </span>
+            <span class="misCursos elementoNavegacionSeleccionado" > Mis cursos </span>
+            <button class="identificarse elementoNavegacion" > Identificarse </button>
+        </span> <!--  cabecera -->
+
+
+
+        <div class="bienvenida margen">
+            <div class="titulo" > Bienvenido al portal de cursos! </div>
+            <div class="fila">
+                <button  class="redireccionCrear botonLogueo"> Crear nuevo curso </button>
+            </div>
+            <div class="fila">
+                <button  class="redireccionActualizar botonLogueo"> Actualizar un curso </button>
+            </div>
+            <div class="fila">
+                <button  class="redireccionBorrar botonLogueo"> Eliminar un curso </button>
+            </div>
+        </div> <!-- bienvenida -->
+
+
+
+
+        <div class="login margen">
+            <div class="titulo" > Identificación </div>
+
+            <div class="nombreCampo"> Dirección de correo: </div>
+            <input type="text" class="campo" id ="campoCorreoLogin" />
+            <div class="nombreCampo"> Contraseña: </div>
+            <input type="password" class ="campo" id = "campoPasswordLogin" />
+            <button class="botonEntrar botonLogueo" > Entrar </button>
+            <div class="registrar"> Crear nueva cuenta </div>
+
+        </div> <!-- login -->
+
+
+
+
+        <div class="busqueda margen">
+            <div class="titulo" > Búsqueda de cursos </div>
+
+            <div class="fila">
+                <div class="nombreCampo celda"> Búsqueda por nombre: </div>
+                <input type="text" class="campo celda" />
+                <span class="celda">
+                    <button class="buscar botonBuscar"> Buscar </button>
+                </span>
+            </div>      
+
+
+
+            <div class="fila">
+                <div class="etiqueta celda"> Nombre</div>
+                <div class="etiqueta celda"> Lugar</div>
+                <div class="etiqueta celda"> Inicio</div>
+                <div class="etiqueta celda"> Fin</div>
+                <div class="etiqueta celda"> Vacantes</div>
+            </div>  
+
+
+        </div><!-- busqueda -->
+
+
+
+        <div class="misCursos margen">
+            <div class="titulo" > Próximos cursos </div>
+
+
+            <div class="fila">
+                <div class="etiqueta celda"> Nombre</div>
+                <div class="etiqueta celda"> Lugar</div>
+                <div class="etiqueta celda"> Inicio</div>
+                <div class="etiqueta celda"> Fin</div>
+            </div>  
+
+
+            <div class="titulo" > Cursos realizados </div>
+
+
+            <div class="fila">
+                <div class="etiqueta celda"> Nombre</div>
+                <div class="etiqueta celda"> Lugar</div>
+                <div class="etiqueta celda"> Inicio</div>
+                <div class="etiqueta celda"> Fin</div>
+            </div>  
+
+
+
+            <div class="titulo" > Tu horario </div>
+
+
+            <div class="fila">
+                <div class="etiqueta celda"> Hora</div>
+                <div class="etiqueta celda"> Lunes</div>
+                <div class="etiqueta celda"> Martes</div>
+                <div class="etiqueta celda"> Miércoles</div>
+                <div class="etiqueta celda"> Jueves</div>
+                <div class="etiqueta celda"> Viernes</div>
+                <div class="etiqueta celda"> Sábado</div>
+                <div class="etiqueta celda"> Domingo</div>
+            </div>  
+        </div><!-- misCursos -->
+
+
+        <div class="registro margen">
+            <div class="titulo" > Nuevo usuario </div>
+
+            <div class="fila">
+                <div class="etiqueta celda"> Dirección de correo (*)</div>
+                <input type="text" class="campo celdaRegistro" id="campoCorreoRegistro" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Contraseña (*)</div>
+                <input type="password" class="campo celdaRegistro" id="campoPasswordRegistro" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Nombre (*)</div>
+                <input type="text" class="campo celdaRegistro" id="campoNombreRegistro" />
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Apellidos (*)</div>
+                <input type="text" class="campo celdaRegistro " id="campoApellidosRegistro" />
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Sexo(*)</div>
+                <div class="celda"> 
+                    <input type="radio" name="sexo" value="H" id="formHombre"/>
+                    <label for="formHombre">Hombre</label>
+                    <input type="radio" name="sexo" value="M" id="formMujer"/>
+                    <label for="formMujer">Mujer</label>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Fecha de nacimiento</div>
+                <input type="date" class="campo celdaRegistro" id="campoFechaRegistro" value='YYYY-MM-DD' />
+            </div>
+            <button class="crearCuenta botonLogueo" > Crear nuevo usuario </button>
+
+        </div> <!-- registro -->
+
+
+
+
+        <div class="registroCurso margen">
+            <div class="titulo" > Nuevo curso </div>
+
+            <div class="fila">
+                <div class="etiqueta celda"> Título del curso (*)</div>
+                <input type="text" class="campo celdaRegistro" id="campoTituloCurso" required/>
+            </div>
+
+            <div class="fila">
+                <div class="etiqueta celda"> Localidad (*)</div>
+                <input type="text" class="campo celdaRegistro" id="campoLocalidadCurso" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Dirección (*)</div>
+                <input type="text" class="campo celdaRegistro " id="campoDireccionCurso" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Número de plazas (*)</div>
+                <input type="text" class="campo celdaRegistro " id="campoNumPlazas" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Fecha de inicio del curso (*)</div>
+                <input type="date" class="campo celdaRegistro" id="campoFechaInicio" value='DD/MM/YYYY' placeholder="DD/MM/YYYY" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Fecha de finalización del curso (*)</div>
+                <input type="date" class="campo celdaRegistro" id="campoFechaFin" value='DD/MM/YYYY' placeholder="DD/MM/YYYY" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Descripción:</div>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"></div>
+                <textarea class="celdaRegistro" rows="10" cols="80" id="campoDescripcionCurso"> </textarea>
+            </div>
+            <button class="crearCurso botonLogueo" > Crear nuevo curso </button>
+
+        </div> <!-- registroCurso -->
+
+
+        <div  id ="buscarCurso" class="margen">
+            <div class="titulo" > Buscar curso </div>
+
+            <div class="fila">
+                <div class="etiqueta celda"> ID del curso a buscar</div>
+                <input type="text" class="campo celdaRegistro" id="campoIdCursoABuscar" required/>
+            </div>
+
+            <button class="botonLogueo"  id="botonBuscarCurso"> Buscar </button>
+
+        </div> <!-- buscarCurso -->
+
+
+
+        <div  id ="buscarCursoTexto" class="margen">
+            <div class="titulo" > Buscar curso por nombre </div>
+
+            <div class="fila">
+                <div class="celda etiqueta"> Cadena del curso a buscar</div>
+                <input type="text" class="campo celdaRegistro" id="campoTextoCursoABuscar" required/>
+                <div class="celda ">  <button class="botonLogueo botonBuscarCursoTexto" value = 0> Buscar </button> </div>
+
+            </div>
+
+
+            <div class="tablaResultados">
+                <table class = tituloTablaResultado>
+
+                </table>
+            </div>
+
+
+            <table class = "tablaPaginacion"> </table>
+
+
+
+
+        </div> <!-- buscarCursoTexto -->
+
+
+
+        <div id="ventana">
+            <div class ="tituloEmergente"> 
+            </div>
+            <div class="descripcionEmergente"></div>
+            <div class ="tituloDato"> Lugar de impartición: </div>
+            <div class="lugarEmergente"> </div>
+            <div class ="tituloDato"> Ciudad: </div>
+            <div class="ciudadEmergente"> </div>
+            <div class ="tituloDato"> Duración: </div>
+            <div class="duracionEmergente"> </div>
+            <div class ="tituloDato"> Horario: </div>
+            <div class="horarioEmergente"> </div>
+            <div class ="tituloDato"> Número de plazas: </div>
+            <div class="plazasEmergente"> </div>
+
+            <button class= "botonCerrar" id="cerrar"> Cerrar </button>
+            <button class= "botonLogueo"> Inscribirse </button>
+            <span class="cerrar">&#x274C;</span>
+        </div> 
+
+
+        <div class="buscarCursoAModificar margen">
+            <div class="titulo" > Modificar curso </div>
+
+            <div class="fila">
+                <div class="etiqueta celda"> ID del curso a modificar (*)</div>
+                <input type="text" class="campo celdaRegistro" id="campoIdCursoAModificar" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Título del curso (*)</div>
+                <input type="text" class="campo celdaRegistro" id="campoTituloCursoAModificar" required />
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Descripción (*)</div>
+                <input type="text" class="campo celdaRegistro" id="campoDescripcionCursoAModificar" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Localidad (*)</div>
+                <input type="text" class="campo celdaRegistro" id="campoLocalidadCursoAModificar" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Dirección (*)</div>
+                <input type="text" class="campo celdaRegistro " id="campoDireccionCursoAModificar" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Número de plazas (*)</div>
+                <input type="text" class="campo celdaRegistro " id="campoNumPlazasAModificar" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Fecha de inicio del curso (*)</div>
+                <input type="date" class="campo celdaRegistro" id="campoFechaInicioAModificar" value='YYYY/MM/DD' placeholder="YYYY/MM/DD" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Fecha de finalización del curso (*)</div>
+                <input type="date" class="campo celdaRegistro" id="campoFechaFinAModificar" value='YYYY/MM/DD' placeholder="YYYY/MM/DD" required/>
+            </div>
+            <button class="botonCursoAModificar botonLogueo" id="botonCursoAModificar" > Modificar</button>
+
+        </div> <!-- actualizarCurso -->
+
+
+        <div class="buscarCursoAEliminar margen">
+            <div class="titulo" > Eliminar curso </div>
+
+            <div class="fila">
+                <div class="etiqueta celda"> ID del curso a eliminar (*)</div>
+                <input type="text" class="campo celdaRegistro" id="campoIdCursoAEliminar" required/>
+            </div>
+
+            <button class="botonCursoAEliminar botonLogueo" > Eliminar</button>
+
+        </div> <!-- eliminarCurso -->
+
+
+        <div class="creacionHorarios margen">
+            <div class="titulo" > Introduce el horario del curso </div>
+
+            <div class="fila">
+                <div class="etiqueta celda"> Día de la semana: (*)</div>
+                <input type="text" class="campo celdaRegistro celda" id="campoDiaHorario" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Empieza a las: (*)</div>
+                <input type="text" class="campo celdaRegistro celda" id="campoHorarioHoraInicio" required/>
+            </div>
+            <div class="fila">
+                <div class="etiqueta celda"> Termina a las: (*)</div>
+                <input type="text" class="campo celdaRegistro celda" id="campoHorarioHoraFin" required/><br>
+            </div>
+            <button class="botonLogueo" id="añadirHorarioCurso"> Añadir </button>
+            <button class="botonLogueo" id="terminarHorarioCurso"> Terminar </button>
+
+        </div> <!-- añadir horarios -->
+
+
+
+        <div id="feedbackVentana">
+            <div class ="tituloFeedback"> 
+            </div>
+            <div class ="mensajeFeedback"> 
+            </div>
+
+
+
+            <span class="cerrar">&#x274C;</span>
+        </div> 
+
+
+        <div class ="grisModal"> </div>
+
+
+    </body>
+</html>

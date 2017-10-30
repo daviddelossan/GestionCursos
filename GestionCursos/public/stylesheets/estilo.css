@@ -1,0 +1,289 @@
+
+body{
+	margin:0px 0px;
+        background-color: rgb(235, 235, 235);
+}
+
+.cabecera {
+	margin: 0px 0px;
+	padding: 10px 10px;
+	width: 100%;
+	display:inline-block;
+	background-color: rgb(200, 200, 200);
+	color: rgb(50, 50, 30);
+	font-size: 2em;
+}
+.identificarse{
+	margin-right: 30px;
+	float: right;
+	text-align: center;
+	border-radius: 12px;
+	align-content: center;
+	display: inline-block;
+	background-color: rgb(255, 255, 255);
+	margin-top: 5px;
+	font-size: 20px;
+}
+.elementoNavegacion{
+	padding: 5px 20px;
+	cursor: pointer;
+}
+.elementoNavegacionSeleccionado{
+	padding: 5px 20px;
+	cursor: pointer;
+	background-color: rgb(210, 210, 210);
+}
+.elementoNavegacion:hover{
+	color:darkblue; 
+}
+
+.margen{
+	margin-left: 30px;
+}
+
+.botonCelda{
+    outline: none;
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+    width: 100%;
+
+    padding: 15px 15px 15px 15px;
+}
+
+.titulo{
+	margin-top: 30px;
+	font-size: 3em;
+}
+.nombreCampo{
+	margin-top:15px;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.etiqueta{
+	margin-top:15px;
+	font-size: 1.5em;
+        
+}
+
+.tablaResultados{
+    margin-top:30px;
+    margin-left: 20px;
+}
+
+.celdaTituloTabla{
+    display: table-cell;
+    text-align: center;
+    margin: none;
+     padding: 15px 15px 15px 15px;
+}
+
+.celdaTabla{
+    display: table-cell;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: none;
+}
+
+.filaTabla{
+    display: table-row;
+    background-color: rgb(0, 0, 0, 1);
+}
+
+.tituloTabla{
+	margin-top:20px;
+        margin-right: 50px;
+        padding-right: 50px;
+         padding-top: 50px;
+	font-size: 1.5em;
+        display: table-row;
+        background-color: rgb(51, 102, 255);
+        color: white;
+       
+}
+
+.campo{
+	margin-top:8px;
+	padding:15px;
+	border-radius: 5px;
+	border-width: 1px;
+	width:95%;
+	height: 20%;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.20);
+	background-color: rgba(255, 255, 255, 0.4);
+
+}
+.botonLogueo{
+	background-color: rgb(51, 102, 255);
+	color:white;
+	text-align: center;
+	border-radius: 12px;
+	align-content: center;
+	display: inline-block;
+	margin-top: 20px;
+	
+	padding: 15px 15px;
+	font-size: 20px;
+        cursor: pointer;
+}
+
+.botonBuscarCursoTexto{
+    margin-left: 20px;
+}
+
+.botonBuscar{
+	background-color: rgb(51, 102, 255);
+	color:white;
+	text-align: center;
+	align-content: center;
+	display: inline-block;
+	padding:8px;
+	font-size: 18px;
+	margin-left: 50px;
+        
+}
+
+.registrar{
+	color:rgb(51, 102, 255);
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 20px;
+	padding: 15px 15px;
+}
+
+.fila{
+	display: table-row;
+	border: 1px solid black;
+}
+
+.celda{
+	display: table-cell;
+	padding: 20px 20px 20px 20px;
+        text-align: left;
+       
+        
+}
+
+
+.celdaRegistro{
+	display: table-cell;
+	padding-right: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 85%;
+}
+
+.registroCurso{
+    margin-left: 30px;
+}
+.buscarCurso{
+    margin-left: 30px;
+}
+.buscarCursoAModificar{
+    margin-left: 30px;
+}
+.buscarCursoAEliminar{
+    margin-left: 30px;
+}
+
+#ventana {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border: 1px solid rgb(100,100,100);
+    width: 45%;
+    box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.55);
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    display: none;
+    font-family: "Verdana";
+    modal: true;
+    border-radius: 15px;
+    text-align: left;
+} 
+
+#ventana span.cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#ventana span.cerrar:hover {
+    color: red;
+}
+
+#ventana button {
+    float: right;
+}
+.botonCerrar {
+        background-color: rgb(100, 100, 100);
+	color:white;
+	text-align: center;
+	border-radius: 12px;
+	align-content: center;
+	display: inline-block;
+	margin-top: 20px;
+	
+	padding: 15px 15px;
+	font-size: 20px;
+        cursor: pointer;
+}
+
+
+
+.tituloEmergente{
+    font-size:  40px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    
+}
+.tituloDato{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.descripcionEmergente{
+    padding-top: 10px;
+}
+#feedbackVentana {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border: 2px solid black;
+    width: 50%;
+    box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.55);
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    display: none;
+} 
+
+#feedbackVentana span.cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#feedbackVentana span.cerrar:hover {
+    color: red;
+}
+
+#feedbackVentana button {
+    border: 1px solid black;
+}
+
+
+
+.grisModal{
+    position: absolute;
+    z-index: 9000;
+    background-color: rgb(10,10,10,0.55);
+    
+}
+.colorNormal{
+    background-color: rgb(255, 255, 255);
+}

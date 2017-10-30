@@ -1,0 +1,9 @@
+ALUMNOS: DAVID DE LOS SANTOS GIL Y DANIEL MARTIN BARRIOS
+
+PARTES REALIZADAS: A, C (de la C solo la parte de registrar usuario y de loguear usuario)
+
+
+
+Hemos corregido el error de la búsqueda de cursos  'Can't set headers after they are sent.'
+
+Hemos añadido la funcionalidad de registrar usuario y de loguear usuario
